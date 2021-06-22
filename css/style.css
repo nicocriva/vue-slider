@@ -64,12 +64,11 @@ h1{
 
 #preview-img > img{
     width: 70px;
-    opacity: 0.5;
+    opacity: 0.3;
     transition: 0.5s;
 }
 
-
-#preview-img > img:hover{
+#preview-img > img:hover, #preview-img > img.active{
     cursor: pointer;
     opacity: 1;
 }

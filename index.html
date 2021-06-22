@@ -24,17 +24,13 @@
             <div class="image">
                 <img :src="photos[counter]" alt="cities">
                 <div id="preview-img">
-                    <img class="previewActive" :src="photos[0]" alt="Cinque Terre" @click="img1">
-                    <img :src="photos[1]" alt="Tokyo" @click="img2">
-                    <img :src="photos[2]" alt="London" @click="img3">
-                    <img :src="photos[3]" alt="Agra" @click="img4">
+                    <img class="previewActive" :class="(index == counter)? 'active' : ''" :src="photos[index]" v-for="(photo, index) in photos" @click="counter = index">
                 </div>
             </div>
             <div class="arrow" @click="rightBtn">
                 <i class="fas fa-chevron-right"></i>
             </div>
         </div>
-
 
     </div>
     
