@@ -24,6 +24,20 @@ const app = new Vue({
             if(this.counter > 3){
                 this.counter = 3
             }
-        }
+        },
+
+        img1 : function(){
+            this.counter = 0
+        },
+        img2 : function(){
+            this.counter = 1
+        },
+        img3 : function(){
+            this.counter = 2
+        },
+        img4 : function(){
+            this.counter = 3
+        },
+
     }
 }); 

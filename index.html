@@ -22,12 +22,12 @@
                 <i class="fas fa-chevron-left"></i>
             </div>
             <div class="image">
-                <img :src="photos[counter]">
+                <img :src="photos[counter]" alt="cities">
                 <div id="preview-img">
-                    <img :src="photos[0]" alt="">
-                    <img :src="photos[1]" alt="">
-                    <img :src="photos[2]" alt="">
-                    <img :src="photos[3]" alt="">
+                    <img :src="photos[0]" alt="Cinque Terre" @click="img1">
+                    <img :src="photos[1]" alt="Tokyo" @click="img2">
+                    <img :src="photos[2]" alt="London" @click="img3">
+                    <img :src="photos[3]" alt="Agra" @click="img4">
                 </div>
             </div>
             <div class="arrow" @click="rightBtn">
