@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*intero contenitore */
+.slider{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    position: relative;
+    height: 100%;
+}
+
+.image > img{
+    height: 100%;
+}
+
+.fas{
+    font-size: 35px;
+    margin: 0 20px;
+}
+
+#preview-img{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+}
+#preview-img > img{
+    width: 100%;
+}
