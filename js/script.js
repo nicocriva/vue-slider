@@ -13,21 +13,24 @@ const app = new Vue({
         ]
     },
 
+
     methods: {
         leftBtn : function(){
-            if(!this.counter == 0){
-                this.counter--
+            this.counter--
+            if(this.counter < 0){
+                this.counter = 3
             }
         },
         rightBtn : function(){
             this.counter++
             if(this.counter > 3){
-                this.counter = 3
+                this.counter = 0
             }
         },
 
         img1 : function(){
             this.counter = 0
+            
         },
         img2 : function(){
             this.counter = 1
