@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"> 
     <title>Photo slider</title>
 </head>
 <body>
     
+    <h1>Travel Memories</h1>
     <div class="container" id="app">
 
         <div class="slider">
-            <i class="fas fa-chevron-left" @click="miaFunzione"></i>
+            <div class="arrow" @click="leftBtn">
+                <i class="fas fa-chevron-left"></i>
+            </div>
             <div class="image">
-                <img src="https://cdn.pixabay.com/photo/2014/03/03/16/12/village-279013_1280.jpg" alt="Cinque Terre">
+                <img :src="photos[counter]">
                 <div id="preview-img">
-                    <img src="https://cdn.pixabay.com/photo/2014/03/03/16/12/village-279013_1280.jpg" alt="">
+                    <img :src="photos[0]" alt="">
+                    <img :src="photos[1]" alt="">
+                    <img :src="photos[2]" alt="">
+                    <img :src="photos[3]" alt="">
                 </div>
             </div>
-            <i class="fas fa-chevron-right"></i>
+            <div class="arrow" @click="rightBtn">
+                <i class="fas fa-chevron-right"></i>
+            </div>
         </div>
 
 
